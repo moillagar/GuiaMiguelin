@@ -1,0 +1,668 @@
+/* common.css
+ *
+ * Copyright (C) 2014 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ * 
+ */
+.error {
+	color: red;
+	font-weight: bolder;
+}
+
+.message {
+	color: red;
+	font-weight: bolder;
+}
+#alturaControlada{
+	height:20%;
+}
+.addrss{
+	padding: 4px; 
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px;
+    border-radius: 4px; 
+    direction: ltr; 
+}
+
+.bigHead{
+	font-size:20px;
+	padding-top:30px;
+}
+.footSuelo{
+	/*margin-bottom:20%;*/ /*Commented because it displays terribly the pages*/
+}
+
+.buscadorResponsivo{
+    	top:20%;
+    }
+#myCarousel2{
+     display: none;
+    }
+#myCarousel{
+     font-size: 16px;
+    }
+#logoApp{
+	opacity: 0.7; 
+	width:100%;
+}
+
+#logoApp:hover{
+	opacity: 1;
+	width:100%;
+}
+    
+.iconNav{
+	width:60%;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	opacity: 0.7; 
+}
+
+.iconNav:hover{
+	width:60%;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	opacity: 1; 
+}
+    
+#users{
+	font-size: 20px;
+}
+@media (max-width: 1024px) {
+	#alturaControlada{
+		margin-left:-80%;
+		width:300%;
+		height:200%;
+	}
+    .buscadorResponsivo{
+    	top:10%;
+    }
+    .zonaResponsiva{
+    	height:200px;
+    	clear:both;
+    }
+    .noCortes{
+    	margin-top:40%;
+    }
+    #logoApp{
+     width: 60%;
+     opacity: 0.7; 
+    }
+    #logoApp:hover{
+     width: 60%;
+     opacity: 1; 
+    }
+    #myCarousel{
+     display: none;
+    }
+    #myCarousel2{
+	      display: block;
+	      
+    }
+    #tituloMobile{
+    	color: #fff;
+	    text-align: center;
+	    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+    #alturaControlada2{
+		margin-left:-100%;
+		width:300%;
+		height:200%;
+		background-image: url("../images/SlideB.png");
+		clear:both;
+	}
+}
+
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: #777;
+	overflow-x: hidden;
+}
+
+h3,h4 {
+	margin: 10px 0 30px 0;
+	/* letter-spacing: 10px; */
+	font-size: 20px;
+	color: #111;
+}
+
+.h3-no-bottom{
+	/* letter-spacing: 10px; */
+	font-size: 20px;
+	color: #111;
+	margin-bottom:1px;
+}
+
+.h3-top{
+/* 	letter-spacing: 10px; */
+	font-size: 20px;
+	color: #111;
+	margin-top:10px;
+}
+
+.container {
+	padding: 80px 5px;
+}
+
+.person {
+	border: 10px solid transparent;
+	margin-bottom: 25px;
+/*	width: 80%;
+	height: 80%;
+*/	opacity: 0.7;
+}
+
+.person:hover {
+	border-color: #f1f1f1;
+}
+
+.petPhoto{
+	max-width: 60%;
+	max-height: 200px;
+	width:auto;
+}
+
+.userPhoto{
+	height:20ex;
+	min-height:20ex;
+	max-height:20ex;
+	width:auto;
+	
+	
+}
+
+
+.userPhotoAvatar{
+	height:30ex;
+	max-height:30ex;
+	width: 100%;
+	
+	
+}
+
+
+.userLittle{
+	height:15ex;
+	min-height:15ex;
+	max-height:15ex;
+	width:23ex;
+	
+	
+}
+
+
+
+.todoAncho{
+	width:100%;
+}
+
+.carousel-inner  {
+	margin: 0 auto;
+}
+
+.carousel-caption h3 {
+	color: #fff !important;
+}
+
+@media ( max-width : 600px) {
+	.carousel-caption {
+		display: none;
+		/* Hide the carousel text when the screen is less than 600 pixels wide */
+	}
+}
+
+.col-md-8-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-8-2-noColor {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-8-2:hover {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color:#ffcc66;
+}
+
+.area-autoAlto {
+	width: 100%;
+	height: 200px;
+	max-height: 200px;
+}
+
+.midl-left {
+	float: left;
+	text-align: left;
+	padding-left:15px;
+}
+
+.img-left {
+	margin-top: 10px;
+	float: left;
+}
+
+.img-right {
+	margin-top: 10px;
+	float: right;
+}
+.col-md-6-2{
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width:50%;
+    display: inline-block;
+}
+.centrado{
+	position:relative;
+	margin:auto;
+	text-align:center;
+	display:inline-block;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.img-left-2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.img-left-2-1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left:10px;
+	float: left;
+}
+.text-rigth-2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: right;
+	font-size:20px;
+	text-align: right;
+}
+.text-rigth-small{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	float: right;
+	font-size:13px;
+	text-align: right;
+}
+.text-left-small{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	float: left;
+	font-size:13px;
+	text-align: left;
+}
+
+.table-separate-100{
+	padding-left:100px;
+}
+.text-rigth-table{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: right;
+	font-size:20px;
+	text-align: right;
+}
+
+.linea-pegada{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.list-name{
+	padding-top:5px;
+	margin-bottom:0px;
+}
+
+.img-center {
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left;
+}
+
+.register-left {
+	margin-top: 10px;
+	float: left;
+}
+
+.register-right {
+	margin-top: 10px;
+	float: right;
+}
+
+.register-todoAncho {
+	width: 100%;
+}
+
+.max-h {
+	max-width: 100%;
+	max-height: 100px;
+	width: auto;
+}
+
+.max-h-2 {
+	max-width: 100%;
+	max-height: 400px;
+	width: auto;
+}
+
+.max-h-4 {
+	max-width: 200px;
+	max-height: 100px;
+	width: auto;
+}
+
+
+.wrap { /* force the div to properly contain the floated images: */
+	position: relative;
+	float: left;
+	clear: none;
+	overflow: hidden;
+}
+
+.wrap-2 { /* force the div to properly contain the floated images: */
+	position: relative;
+	clear: none;
+	overflow: hidden;
+	width:100%;
+}
+.wrap-2:hover { /* force the div to properly contain the floated images: */
+	position: relative;
+	clear: none;
+	overflow: hidden;
+	width:100%;
+	background-color:#ffcc66;
+}
+
+.wrap-3 { /* force the div to properly contain the floated images: */
+	position: relative;
+	clear: none;
+	overflow: hidden;
+	width:100%;
+}
+
+.wrap img {
+	position: relative;
+	z-index: 1;
+}
+
+.wrap .desc {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	text-align: right;
+}
+
+.wrap span{
+	font-size:30px; 
+}
+
+.max-h-little {
+	max-width: 100%;
+	max-height: 120px;
+	width: auto;
+}
+
+.button-bottom {
+	margin-top: 20px;
+}
+
+.bg-1 {
+	background: #2d2d30;
+	color: #bdbdbd;
+}
+
+.bg-1 h3 {
+	color: #fff;
+}
+
+.bg-1 p {
+	font-style: italic;
+}
+
+.list-group-item:first-child {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+
+.thumbnail p {
+	margin-top: 15px;
+	color: #555;
+}
+
+.btn {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #f1f1f1;
+	border-radius: 0;
+	transition: .2s;
+}
+
+.btn:hover,.btn:focus {
+	border: 1px solid #333;
+	background-color: #fff;
+	color: #000;
+}
+
+.center-bottom {
+	margin-bottom: 200px;
+}
+
+.modal-header,h4,.close {
+	background-color: #333;
+	color: #fff !important;
+	text-align: center;
+	font-size: 30px;
+}
+
+.modal-header,.modal-body {
+	padding: 40px 50px;
+}
+
+.nav-tabs li a {
+	color: #777;
+}
+
+#googleMap {
+	width: 100%;
+	height: 400px;
+	/* -webkit-filter: grayscale(100%); */ /*Commented to show the map with colour*/
+	/*filter: grayscale(100%);*/
+}
+
+#googleMap .tripDisplay{
+		
+}
+.navbar {
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0;
+	background-color: #2d2d30;
+	border: 0;
+	font-size: 11px !important;
+	letter-spacing: 4px;
+	opacity: 0.9;
+}
+
+
+#divTop{
+		background-color: #2d2d30;
+		height: 80px;
+}
+
+.navbar li a,.navbar .navbar-brand {
+	color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+	color: #fff !important;
+}
+
+.navbar-nav li.active a {
+	color: #fff !important;
+	background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.open .dropdown-toggle {
+	color: #fff;
+	background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+	color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+	background-color: red !important;
+}
+
+footer {
+	background-color: #2d2d30;
+	color: #f5f5f5;
+	padding: 32px;
+}
+
+footer a {
+	color: #f5f5f5;
+}
+
+footer a:hover {
+	color: #777;
+	text-decoration: none;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+.blackL {
+	color: black;
+}
+
+.labelInput {
+	float: right;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.tableLabel {
+	text-align: left;
+	padding-right: 10px;
+}
+
+.tableInput {
+	text-align: right;
+	width: 10%;
+}
+
+.tableError {
+	text-align: left;
+	width: 25%;
+	padding-left: 4px;
+}
+
+
+<!-- STAR THINGS -->
+
+.star-rating{
+	font-size: 0;
+}
+
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 15px;
+}
+
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #FFB300;
+}
+
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+
+.star-rating__input{
+	display: none;
+}
+
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before{
+	content: "\f005";
+}
+
+​
+
+.fa fa-circle-o:hover:before,
+.fa fa-circle-o:hover ~ .fa fa-circle-o:before,
+.fa fa-circle-o:checked ~ .fa fa-circle-o:before{
+	content: "\f005";
+}
+
+.petOwnerRegister-text{
+	color:#FFA500;
+}
+
+.petSitterRegister-text{
+	/*color:#c03838;*/
+	color:#c53434;
+}
+
+.petShipperRegister-text{
+	color:#4994bb;
+}
+
+.companyRegister-text{
+	/*color:#44753a;*/
+	color:#45c72b
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2014 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="establecimiento/list" extends="master.page">	
+		<put-attribute name="title" value="Lita de establecimientos" />
+		<put-attribute name="body" value="/views/establecimiento/list.jsp"/>
+	</definition>	
+
+<definition name="establecimiento/listNoPublicado" extends="master.page">	
+		<put-attribute name="title" value="Lita de establecimientos" />
+		<put-attribute name="body" value="/views/establecimiento/listNoPublicado.jsp"/>
+	</definition>
+	
+
+	
+	<definition name="establecimiento/create" extends="master.page">	
+		<put-attribute name="title" value="Crear Establecimiennto" />
+		<put-attribute name="body" value="/views/establecimiento/edit.jsp"/>
+	</definition>
+	
+	<definition name="establecimiento/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar Establecimiennto" />
+		<put-attribute name="body" value="/views/establecimiento/edit.jsp"/>
+	</definition>	
+	
+	<definition name="establecimiento/view" extends="master.page">	
+		<put-attribute name="title" value="Ver establecimiento" />
+		<put-attribute name="body" value="/views/establecimiento/view.jsp"/>
+	</definition>
+
+</tiles-definitions>

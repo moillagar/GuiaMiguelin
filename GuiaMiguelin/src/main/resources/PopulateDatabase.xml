@@ -1,0 +1,2050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- * PopulateDatabase.xml * * Copyright (C) 2014 Universidad de Sevilla 
+	* * The use of this project is hereby constrained to the conditions of the 
+	* TDG Licence, a copy of which you may download from * http://www.tdg-seville.info/License.html -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- User accounts -->
+
+<!-- la contraseña par todos los usurrio es "contraseña"-> "4c882dcb24bcb1bc225391a602feca7c" -->
+	<bean id="userAccount1" class="security.UserAccount">
+		<property name="username" value="admin1" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ADMIN" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="userAccount2" class="security.UserAccount">
+		<property name="username" value="admin2" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ADMIN" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="userAccount3.1" class="security.UserAccount">
+		<property name="username" value="proveedor3.1" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="PROVEEDOR" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="userAccount3.2" class="security.UserAccount">
+		<property name="username" value="proveedor3.2" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="PROVEEDOR" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="userAccount3.3" class="security.UserAccount">
+		<property name="username" value="proveedor3.3" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="PROVEEDOR" />
+			</bean>
+		</property>
+	</bean>
+	
+	
+	
+	<bean id="userAccount4.1" class="security.UserAccount">
+		<property name="username" value="estudiante4.1" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+	
+	
+	<bean id="userAccount4.2" class="security.UserAccount">
+		<property name="username" value="estudiante4.2" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+	
+	
+	<bean id="userAccount4.3" class="security.UserAccount">
+		<property name="username" value="estudiante4.3" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+	
+	
+	<bean id="userAccount4.4" class="security.UserAccount">
+		<property name="username" value="estudiante4.4" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+	
+		<bean id="userAccount4.5" class="security.UserAccount">
+		<property name="username" value="estudiante4.5" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+	
+		<bean id="userAccount4.6" class="security.UserAccount">
+		<property name="username" value="estudiante4.6" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.7" class="security.UserAccount">
+		<property name="username" value="estudiante4.7" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.8" class="security.UserAccount">
+		<property name="username" value="estudiante4.8" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.9" class="security.UserAccount">
+		<property name="username" value="estudiante4.9" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.10" class="security.UserAccount">
+		<property name="username" value="estudiante4.10" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.11" class="security.UserAccount">
+		<property name="username" value="estudiante4.11" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.12" class="security.UserAccount">
+		<property name="username" value="estudiante4.12" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.13" class="security.UserAccount">
+		<property name="username" value="estudiante4.13" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.14" class="security.UserAccount">
+		<property name="username" value="estudiante4.14" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.15" class="security.UserAccount">
+		<property name="username" value="estudiante4.15" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.16" class="security.UserAccount">
+		<property name="username" value="estudiante4.16" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.17" class="security.UserAccount">
+		<property name="username" value="estudiante4.17" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.18" class="security.UserAccount">
+		<property name="username" value="estudiante4.18" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.19" class="security.UserAccount">
+		<property name="username" value="estudiante4.19" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="userAccount4.20" class="security.UserAccount">
+		<property name="username" value="estudiante4.20" />
+		<property name="password" value="4c882dcb24bcb1bc225391a602feca7c" />
+		<property name="authorities">
+			<bean class="security.Authority">
+				<property name="authority" value="ESTUDIANTE" />
+			</bean>
+		</property>
+	</bean>
+	
+
+	
+	<!-- administrator -->
+
+	<bean id="admin1" class="domain.Administrator">
+		<property name="nombre" value="Moisés"></property>
+		<property name="apellidos" value="Llamas García"></property>
+		<property name="email" value="moisesllamasgarcia@gmail.com"></property>
+		<property name="user" ref="userAccount1"></property>
+		<property name="incidencias">
+			<list>
+				<ref bean="incidencia1"></ref>
+				<ref bean="incidencia2"></ref>
+				<ref bean="incidencia3"></ref>
+				<ref bean="incidencia4"></ref>
+				<ref bean="incidencia5"></ref>
+				<ref bean="incidencia6"></ref>
+				<ref bean="incidencia7"></ref>
+				<ref bean="incidencia8"></ref>
+						
+		</list>
+	</property>
+
+	</bean>
+
+
+
+	<bean id="admin2" class="domain.Administrator">
+		<property name="nombre" value="Miguel"></property>
+		<property name="apellidos" value="Bellido Millan"></property>
+		<property name="email" value="miguel@gmail.com"></property>
+		<property name="user" ref="userAccount2"></property>
+
+	</bean>
+	
+	<!-- PROVEEDOR -->
+
+	<bean id="proveedor3.1" class="domain.Proveedor">
+		<property name="nombre" value="Manuel Antonio"></property>
+		<property name="apellidos" value=" Fernández Ortubey"></property>
+		<property name="email" value="mAntonio@gmail.com"></property>
+		<property name="cuentaDesactivada" value="false"></property>
+		<property name="userCode" value="userCodeProveedor3.1"></property>
+		<property name="user" ref="userAccount3.1"></property>
+		<property name="establecimientos">
+			<list>
+				<ref bean="establecimiento1"></ref>
+				<ref bean="establecimiento2"></ref>
+				<ref bean="establecimiento3"></ref>
+				<ref bean="establecimiento4"></ref>
+				<ref bean="establecimiento5"></ref>
+				
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="proveedor3.2" class="domain.Proveedor">
+		<property name="nombre" value="Manuel Antonio"></property>
+		<property name="apellidos" value="Fernández Ortubey"></property>
+		<property name="email" value="manuelAntonio@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="userCode" value="userCodeProveedor3.2"></property>
+		<property name="user" ref="userAccount3.2"></property>
+		<property name="establecimientos">
+			<list>
+				<ref bean="establecimiento6"></ref>
+				<ref bean="establecimiento7"></ref>
+				<ref bean="establecimiento8"></ref>
+				<ref bean="establecimiento9"></ref>
+				<ref bean="establecimiento10"></ref>
+				
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="proveedor3.3" class="domain.Proveedor">
+		<property name="nombre" value="Eloísa Beatriz"></property>
+		<property name="apellidos" value="Giménez Gómez"></property>
+		<property name="email" value="eloisaBeatriz@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="userCode" value="userCodeProveedor3.3"></property>
+		<property name="user" ref="userAccount3.3"></property>
+		<property name="establecimientos">
+			<list>
+				<ref bean="establecimiento11"></ref>
+				<ref bean="establecimiento12"></ref>
+				<ref bean="establecimiento13"></ref>
+				<ref bean="establecimiento14"></ref>
+				<ref bean="establecimiento15"></ref>
+				
+			</list>
+		</property>	
+	</bean>
+	
+
+
+
+	<!-- ESTUDIANTE -->
+	
+	
+	<bean id="estudiante4.1" class="domain.Estudiante">
+		<property name="nombre" value="María Rosa"></property>
+		<property name="apellidos" value="Pi Frías"></property>
+		<property name="email" value="mRosa@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Electrónica"></property>
+		<property name="fechaNacimiento" value="03/02/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.1"></property>
+		<property name="user" ref="userAccount4.1"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta1"></ref>
+				<ref bean="calificacionOferta15"></ref>
+				<ref bean="calificacionOferta26"></ref>
+				<ref bean="calificacionOferta36"></ref>
+							
+				
+			</list>
+		</property>	
+		
+		<property name="incidencias">
+			<list>
+				<ref bean="incidencia1"></ref>	
+				<ref bean="incidencia10"></ref>			
+			</list>
+		</property>	
+		
+	</bean>
+	
+	<bean id="estudiante4.2" class="domain.Estudiante">
+		<property name="nombre" value="Juan María"></property>
+		<property name="apellidos" value="Estévez Raimúndez"></property>
+		<property name="email" value="jmaria@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería de la Salud"></property>
+		<property name="fechaNacimiento" value="03/02/1985"></property>
+		<property name="userCode" value="userCodeEstudiante4.2"></property>
+		<property name="user" ref="userAccount4.2"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta2"></ref>
+				<ref bean="calificacionOferta6"></ref>
+				<ref bean="calificacionOferta16"></ref>
+				<ref bean="calificacionOferta27"></ref>
+				<ref bean="calificacionOferta37"></ref>
+							
+				
+			</list>
+		</property>	<property name="incidencias">
+			<list>
+				<ref bean="incidencia2"></ref>			
+			</list>
+		</property>		
+	</bean>
+	
+	<bean id="estudiante4.3" class="domain.Estudiante">
+		<property name="nombre" value="Daniel José"></property>
+		<property name="apellidos" value="Narancio Araújo"></property>
+		<property name="email" value="danieljose@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Robótica"></property>
+		<property name="fechaNacimiento" value="23/02/1993"></property>
+		<property name="userCode" value="userCodeEstudiante4.3"></property>
+		<property name="user" ref="userAccount4.3"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta3"></ref>
+				<ref bean="calificacionOferta17"></ref>
+				<ref bean="calificacionOferta28"></ref>
+				<ref bean="calificacionOferta38"></ref>
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia3"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.4" class="domain.Estudiante">
+		<property name="nombre" value="Julio César"></property>
+		<property name="apellidos" value="Ruiz Norman"></property>
+		<property name="email" value="juliiocesar@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Electrónica"></property>
+		<property name="fechaNacimiento" value="12/12/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.4"></property>
+		<property name="user" ref="userAccount4.4"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta4"></ref>
+				<ref bean="calificacionOferta7"></ref>
+				<ref bean="calificacionOferta18"></ref>
+				<ref bean="calificacionOferta29"></ref>
+				<ref bean="calificacionOferta39"></ref>
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia4"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.5" class="domain.Estudiante">
+		<property name="nombre" value="Arturo"></property>
+		<property name="apellidos" value="Tabares Mora"></property>
+		<property name="email" value="arturotabares@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Mecánica"></property>
+		<property name="fechaNacimiento" value="13/03/1993"></property>
+		<property name="userCode" value="userCodeEstudiante4.5"></property>
+		<property name="user" ref="userAccount4.5"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta5"></ref>
+				<ref bean="calificacionOferta8"></ref>
+				<ref bean="calificacionOferta19"></ref>
+				<ref bean="calificacionOferta30"></ref>
+				<ref bean="calificacionOferta40"></ref>
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia5"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.6" class="domain.Estudiante">
+		<property name="nombre" value="Gerardo"></property>
+		<property name="apellidos" value="Alarcón López"></property>
+		<property name="email" value="galarcon@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Informática-Grado en Software"></property>
+		<property name="fechaNacimiento" value="02/05/1988"></property>
+		<property name="userCode" value="userCodeEstudiante4.6"></property>
+		<property name="user" ref="userAccount4.6"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta9"></ref>
+				<ref bean="calificacionOferta20"></ref>
+				<ref bean="calificacionOferta31"></ref>
+				<ref bean="calificacionOferta41"></ref>
+				
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia6"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.7" class="domain.Estudiante">
+		<property name="nombre" value="Marcial"></property>
+		<property name="apellidos" value="Alemán Mundo"></property>
+		<property name="email" value="mundo@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Grado en Enfermería"></property>
+		<property name="fechaNacimiento" value="12/12/1990"></property>
+		<property name="userCode" value="userCodeEstudiante4.7"></property>
+		<property name="user" ref="userAccount4.7"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta10"></ref>
+				<ref bean="calificacionOferta21"></ref>
+				<ref bean="calificacionOferta32"></ref>
+				<ref bean="calificacionOferta42"></ref>
+			
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia7"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.8" class="domain.Estudiante">
+		<property name="nombre" value="Felipe"></property>
+		<property name="apellidos" value="Álvarez Medellín"></property>
+		<property name="email" value="medellin@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Aeroespacial"></property>
+		<property name="fechaNacimiento" value="12/12/1994"></property>
+		<property name="userCode" value="userCodeEstudiante4.8"></property>
+		<property name="user" ref="userAccount4.8"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta11"></ref>
+				<ref bean="calificacionOferta12"></ref>
+				<ref bean="calificacionOferta22"></ref>
+				<ref bean="calificacionOferta33"></ref>
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia8"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.9" class="domain.Estudiante">
+		<property name="nombre" value="Olga"></property>
+		<property name="apellidos" value="Casillas Gutiérrez"></property>
+		<property name="email" value="olga@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Grado en Biología"></property>
+		<property name="fechaNacimiento" value="12/12/1992"></property>
+		<property name="userCode" value="userCodeEstudiante4.9"></property>
+		<property name="user" ref="userAccount4.9"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta13"></ref>
+				<ref bean="calificacionOferta6"></ref>
+				<ref bean="calificacionOferta16"></ref>
+				<ref bean="calificacionOferta27"></ref>
+							
+				
+			</list>
+		</property>	
+			<property name="incidencias">
+			<list>
+				<ref bean="incidencia9"></ref>			
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="estudiante4.10" class="domain.Estudiante">
+		<property name="nombre" value="Marisol"></property>
+		<property name="apellidos" value="Castañeda Pérez"></property>
+		<property name="email" value="marisol@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Robótica"></property>
+		<property name="fechaNacimiento" value="13/04/1984"></property>
+		<property name="userCode" value="userCodeEstudiante4.10"></property>
+		<property name="user" ref="userAccount4.10"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta14"></ref>
+				<ref bean="calificacionOferta24"></ref>
+				<ref bean="calificacionOferta35"></ref>
+							
+				
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="estudiante4.11" class="domain.Estudiante">
+		<property name="nombre" value="Baltazar"></property>
+		<property name="apellidos" value="Castañón Gutiérrez"></property>
+		<property name="email" value="baltazar@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Electrónica"></property>
+		<property name="fechaNacimiento" value="12/12/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.11"></property>
+		<property name="user" ref="userAccount4.11"></property>
+		<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta25"></ref>
+				
+							
+				
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="estudiante4.12" class="domain.Estudiante">
+		<property name="nombre" value=" Manuel Augusto"></property>
+		<property name="apellidos" value="Ruiz Norman"></property>
+		<property name="email" value="au@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Electrónica"></property>
+		<property name="fechaNacimiento" value="01/05/1990"></property>
+		<property name="userCode" value="userCodeEstudiante4.12"></property>
+		<property name="user" ref="userAccount4.12"></property>
+	</bean>
+	<bean id="estudiante4.13" class="domain.Estudiante">
+		<property name="nombre" value="Luis"></property>
+		<property name="apellidos" value="Castro Sánchez"></property>
+		<property name="email" value="luis@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Grado en Matemáticas"></property>
+		<property name="fechaNacimiento" value="01/01/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.13"></property>
+		<property name="user" ref="userAccount4.13"></property>
+	</bean>
+	<bean id="estudiante4.14" class="domain.Estudiante">
+		<property name="nombre" value="Eva"></property>
+		<property name="apellidos" value="Chacón García"></property>
+		<property name="email" value="evita@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingenieria de la Edificación"></property>
+		<property name="fechaNacimiento" value="12/02/1990"></property>
+		<property name="userCode" value="userCodeEstudiante4.14"></property>
+		<property name="user" ref="userAccount4.14"></property>
+	</bean>
+	<bean id="estudiante4.15" class="domain.Estudiante">
+		<property name="nombre" value="Yolanda"></property>
+		<property name="apellidos" value="Chávez Montelongo"></property>
+		<property name="email" value="yoli@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Grado en Arquitectura"></property>
+		<property name="fechaNacimiento" value="12/07/1992"></property>
+		<property name="userCode" value="userCodeEstudiante4.15"></property>
+		<property name="user" ref="userAccount4.15"></property>
+	</bean>
+	<bean id="estudiante4.16" class="domain.Estudiante">
+		<property name="nombre" value="Gabriel"></property>
+		<property name="apellidos" value="Coria Martínez"></property>
+		<property name="email" value="gabriel@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Mecatrónica"></property>
+		<property name="fechaNacimiento" value="12/12/1981"></property>
+		<property name="userCode" value="userCodeEstudiante4.16"></property>
+		<property name="user" ref="userAccount4.16"></property>
+	</bean>
+	<bean id="estudiante4.17" class="domain.Estudiante">
+		<property name="nombre" value="Claudia"></property>
+		<property name="apellidos" value="Corrales Andrade"></property>
+		<property name="email" value="claudia@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Grado en Medicina "></property>
+		<property name="fechaNacimiento" value="30/10/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.17"></property>
+		<property name="user" ref="userAccount4.17"></property>
+	</bean>
+	<bean id="estudiante4.18" class="domain.Estudiante">
+		<property name="nombre" value="Carlos"></property>
+		<property name="apellidos" value="Galindo Andrade"></property>
+		<property name="email" value="carlos@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Electrónica"></property>
+		<property name="fechaNacimiento" value="11/11/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.18"></property>
+		<property name="user" ref="userAccount4.18"></property>
+	</bean>
+	<bean id="estudiante4.19" class="domain.Estudiante">
+		<property name="nombre" value="Julio César"></property>
+		<property name="apellidos" value="Ruiz Norman"></property>
+		<property name="email" value="juliiocesar@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería Electrónica"></property>
+		<property name="fechaNacimiento" value="12/12/1991"></property>
+		<property name="userCode" value="userCodeEstudiante4.19"></property>
+		<property name="user" ref="userAccount4.19"></property>
+	</bean>
+	<bean id="estudiante4.20" class="domain.Estudiante">
+		<property name="nombre" value="Omar"></property>
+		<property name="apellidos" value="Fuentes Cerdán"></property>
+		<property name="email" value="omar@gmail.com"></property>
+		<property name="cuentaDesactivada" value="true"></property>
+		<property name="titulacion" value="Ingeniería de la Salud"></property>
+		<property name="fechaNacimiento" value="04/01/1993"></property>
+		<property name="userCode" value="userCodeEstudiante4.20"></property>
+		<property name="user" ref="userAccount4.20"></property>
+	</bean>
+	
+	
+	
+	
+	
+	<!-- ESTABLECIMIENTOS -->
+	<bean id="establecimiento1" class="domain.Establecimiento">	
+	<property name="nombre" value="PLAZA"></property>
+	<property name="descripcion" value="Bar en el que puedes encontrar todo tipo de tapas "></property>
+	<property name="direccion" value="c/Badajoz, 24"></property>
+	<property name="web" value="http://www.barplaza.com"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="BAR"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS MACARENA"></property>
+	<property name="proveedor" ref="proveedor3.1"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta1.1"></ref>
+				<ref bean="oferta1.2"></ref>
+				<ref bean="oferta1.3"></ref>
+				<ref bean="oferta1.4"></ref>
+				
+				
+			</list>
+		</property>	
+		
+	</bean>
+	
+	<bean id="establecimiento2" class="domain.Establecimiento">	
+	<property name="nombre" value="LA TABERNA"></property>
+	<property name="descripcion" value="Bar en el que puedes encontrar todo tipo de tapas "></property>
+	<property name="direccion" value="c/Baleares, 24"></property>
+	<property name="web" value="http://www.barla taberna.com"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="RESTAURANTE"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS REINA MERCEDES"></property>
+	<property name="proveedor" ref="proveedor3.1"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta2.1"></ref>
+				<ref bean="oferta2.2"></ref>
+				
+				
+			</list>
+		</property>		
+	</bean>
+	
+	<bean id="establecimiento3" class="domain.Establecimiento">	
+	<property name="nombre" value="El molino"></property>
+	<property name="descripcion" value="Bar en el que puedes encontrar todo tipo de tapas "></property>
+	<property name="direccion" value="c/Baños, 24"></property>
+	<property name="web" value="http://www.barmolino.com"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="BAR"></property>
+	<property name="publicado" value="false"></property>
+	<property name="campus" value="CAMPUS MACARENA"></property>
+	<property name="proveedor" ref="proveedor3.1"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta3.1"></ref>
+				<ref bean="oferta3.2"></ref>
+				<ref bean="oferta3.3"></ref>
+				<ref bean="oferta3.4"></ref>
+				<ref bean="oferta3.5"></ref>
+				<ref bean="oferta3.6"></ref>
+				
+				
+			</list>
+		</property>	
+	
+		
+	</bean>
+	
+	<bean id="establecimiento4" class="domain.Establecimiento">	
+	<property name="nombre" value="Paraiso"></property>
+	<property name="descripcion" value="Bar en el que puedes encontrar todo tipo de tapas "></property>
+	<property name="direccion" value="c/Bejar, 24"></property>
+	<property name="web" value="http://www.barplaza.com"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="BAR"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS MACARENA"></property>
+	<property name="proveedor" ref="proveedor3.1"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta4.1"></ref>
+				<ref bean="oferta4.2"></ref>
+				<ref bean="oferta4.3"></ref>
+				<ref bean="oferta4.4"></ref>
+				
+				
+				
+			</list>
+		</property>		
+	</bean>
+	
+	<bean id="establecimiento5" class="domain.Establecimiento">	
+	<property name="nombre" value="Tropical"></property>
+	<property name="descripcion" value="Bar en el que puedes encontrar todo tipo de tapas "></property>
+	<property name="direccion" value="c/Betis, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="BAR"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS MACARENA"></property>
+	<property name="proveedor" ref="proveedor3.1"></property>	
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta5.1"></ref>
+				<ref bean="oferta5.2"></ref>
+				<ref bean="oferta5.3"></ref>
+				<ref bean="oferta5.4"></ref>
+		</list>
+	</property>	
+	</bean>
+	
+	
+	
+	
+		<bean id="establecimiento6" class="domain.Establecimiento">	
+	<property name="nombre" value="TREBOL"></property>
+	<property name="descripcion" value="Comedor universitario, en el que el menú diario cuesta 4.50€"></property>
+	<property name="direccion" value="c/Oducia, 24"></property>
+	<property name="web" value="http://www.trebol.com"></property>
+	<property name="numeroTelefono" value="954013348"></property>
+	<property name="tipoEstablecimiento" value="COMEDOR UNIVERSITARIO"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS REINA MERCEDES"></property>
+	<property name="proveedor" ref="proveedor3.2"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta6.1"></ref>
+				<ref bean="oferta6.2"></ref>
+			
+		</list>
+	</property>		
+	</bean>
+	
+	<bean id="establecimiento7" class="domain.Establecimiento">	
+	<property name="nombre" value="El Puerto"></property>
+	<property name="descripcion" value="Bar en el que encontraras las mejores tapas al mejor precio"></property>
+	<property name="direccion" value="c/Olivares, 24"></property>
+	<property name="numeroTelefono" value="954015648"></property>
+	<property name="tipoEstablecimiento" value="BAR"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS REINA MERCEDES"></property>
+	<property name="proveedor" ref="proveedor3.2"></property>
+	
+	</bean>
+	
+	<bean id="establecimiento8" class="domain.Establecimiento">	
+	<property name="nombre" value="El molino"></property>
+	<property name="descripcion" value="Copas a mitad de precio presentando el carnet de estudiante uiniversitario"></property>
+	<property name="direccion" value="c/Campana, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="OTROS"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS CARTUJA"></property>
+	<property name="proveedor" ref="proveedor3.2"></property>	
+	</bean>
+	
+	<bean id="establecimiento9" class="domain.Establecimiento">	
+	<property name="nombre" value="Paraiso"></property>
+	<property name="descripcion" value="todos los dias barra libre de cerveza para estudiantes, hasta las 2AM"></property>
+	<property name="direccion" value="c/Bejar, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="OTROS"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS CARTUJA"></property>
+	<property name="proveedor" ref="proveedor3.2"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta9.1"></ref>
+				<ref bean="oferta9.2"></ref>
+				<ref bean="oferta9.3"></ref>
+			
+		</list>
+	</property>		
+	</bean>
+	
+	<bean id="establecimiento10" class="domain.Establecimiento">	
+	<property name="nombre" value="Bar Cartuja"></property>
+	<property name="descripcion" value="Bar en el que puedes encontrar todo tipo de tapas "></property>
+	<property name="direccion" value="c/Betis, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="BAR"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="CAMPUS CARTUJA"></property>
+	<property name="proveedor" ref="proveedor3.2"></property>	
+	</bean>
+	
+	
+	
+	<bean id="establecimiento11" class="domain.Establecimiento">	
+	<property name="nombre" value="Restaurante Shangai"></property>
+	<property name="descripcion" value="Restaurante chino, con gran variedad de comida oriental"></property>
+	<property name="direccion" value="c/Madrid, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="RESTAURANTE"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="ESCUELA POLITÉCNICA SUPERIOR"></property>
+	<property name="proveedor" ref="proveedor3.3"></property>	
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta11.1"></ref>
+				<ref bean="oferta11.2"></ref>
+				<ref bean="oferta11.3"></ref>
+				<ref bean="oferta11.4"></ref>
+				<ref bean="oferta11.5"></ref>
+				<ref bean="oferta11.6"></ref>
+			
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="establecimiento12" class="domain.Establecimiento">	
+	<property name="nombre" value="Restaurante CasaJuan"></property>
+	<property name="descripcion" value="Restaurante con comida casera de forma diaria"></property>
+	<property name="direccion" value="c/Jaen, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="RESTAURANTE"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="ESCUELA POLITÉCNICA SUPERIOR"></property>
+	<property name="proveedor" ref="proveedor3.3"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta12.1"></ref>
+				<ref bean="oferta12.2"></ref>
+				<ref bean="oferta12.3"></ref>
+				<ref bean="oferta12.4"></ref>
+				<ref bean="oferta12.5"></ref>
+				<ref bean="oferta12.6"></ref>
+				<ref bean="oferta12.7"></ref>
+				<ref bean="oferta12.8"></ref>
+				<ref bean="oferta12.9"></ref>
+				<ref bean="oferta12.10"></ref>
+			
+		</list>
+	</property>	
+	</bean>
+	
+	<bean id="establecimiento13" class="domain.Establecimiento">	
+	<property name="nombre" value="Comedor ETSI II"></property>
+	<property name="descripcion" value="Comedor Univertario no-oficial de la ETSI"></property>
+	<property name="direccion" value="c/Malaga, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="COMEDOR UNIVERSITARIO"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="ESCUELA POLITÉCNICA SUPERIOR"></property>
+	<property name="proveedor" ref="proveedor3.3"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta13.1"></ref>
+				<ref bean="oferta13.2"></ref>
+			
+			
+		</list>
+	</property>		
+	</bean>
+	
+	<bean id="establecimiento14" class="domain.Establecimiento">	
+	<property name="nombre" value="Comedor ETSI"></property>
+	<property name="descripcion" value="Comedor Univertario oficial de la ETSI"></property>
+	<property name="direccion" value="c/Huelva, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="COMEDOR UNIVERSITARIO"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="ESCUELA POLITÉCNICA SUPERIOR"></property>
+	<property name="proveedor" ref="proveedor3.3"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta14.1"></ref>
+				<ref bean="oferta14.2"></ref>
+			
+			
+		</list>
+	</property>	
+	</bean>
+	
+	<bean id="establecimiento15" class="domain.Establecimiento">	
+	<property name="nombre" value="878"></property>
+	<property name="descripcion" value="Pub con bebidas de primeras marcas con gran cantidad de ofertas diarias. Ven y conocenos!"></property>
+	<property name="direccion" value="c/Antequera, 24"></property>
+	<property name="numeroTelefono" value="954013648"></property>
+	<property name="tipoEstablecimiento" value="OTROS"></property>
+	<property name="publicado" value="true"></property>
+	<property name="campus" value="ESCUELA POLITÉCNICA SUPERIOR"></property>
+	<property name="proveedor" ref="proveedor3.3"></property>
+	<property name="ofertas">
+			<list>
+				<ref bean="oferta15.1"></ref>
+				<ref bean="oferta15.2"></ref>
+				<ref bean="oferta15.3"></ref>
+				<ref bean="oferta15.4"></ref>
+				<ref bean="oferta15.5"></ref>
+				<ref bean="oferta15.6"></ref>
+				<ref bean="oferta15.7"></ref>
+				<ref bean="oferta15.8"></ref>
+				<ref bean="oferta15.9"></ref>
+				<ref bean="oferta15.10"></ref>
+			
+		</list>
+	</property>		
+	</bean>
+	
+	
+	
+	
+	
+	
+	<bean id="oferta1.1" class="domain.Oferta">
+	<property name="nombre" value="2x1"></property>
+	<property name="descripcion" value="Comprando una consumición, le regalamos otra igual"></property>
+	<property name="codigo" value="11"></property>
+	
+	<property name="establecimiento" ref="establecimiento1"></property>
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta1"></ref>
+				<ref bean="calificacionOferta2"></ref>
+				<ref bean="calificacionOferta3"></ref>
+				<ref bean="calificacionOferta4"></ref>
+				<ref bean="calificacionOferta5"></ref>
+			
+			
+		</list>
+	</property>		
+	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia1"></ref>
+				<ref bean="incidencia2"></ref>				
+		</list>
+	</property>		
+		
+	</bean>
+	
+	<bean id="oferta1.2" class="domain.Oferta">
+	<property name="nombre" value="Desayunos de oferta"></property>
+	<property name="descripcion" value="Comprando un café, le regalamos una tostada"></property>
+	<property name="codigo" value="12"></property>
+	<property name="precio" value="0.80"></property>
+	
+	<property name="establecimiento" ref="establecimiento1"></property>	
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta6"></ref>
+				<ref bean="calificacionOferta7"></ref>
+				<ref bean="calificacionOferta8"></ref>
+				<ref bean="calificacionOferta9"></ref>
+			
+			
+		</list>
+	</property>	
+	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia3"></ref>
+				<ref bean="incidencia4"></ref>				
+		</list>
+	</property>
+	
+	</bean>
+	
+	<bean id="oferta1.3" class="domain.Oferta">
+	<property name="nombre" value="Hora feliz"></property>
+	<property name="descripcion" value="Durante las 17:00 y 18:00, todas las consumiciones a mitad de precio"></property>
+	<property name="codigo" value="13"></property>
+	
+	<property name="establecimiento" ref="establecimiento1"></property>	
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta10"></ref>
+				
+			
+			
+		</list>
+	</property>	
+	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia5"></ref>			
+		</list>
+	</property>
+	</bean>
+	<bean id="oferta1.4" class="domain.Oferta">
+	<property name="nombre" value="Ron r 3x2"></property>
+	<property name="descripcion" value="Compra  3 copas de ron r y paga solo 2"></property>
+	<property name="codigo" value="14"></property>
+	<property name="precio" value="5.75"></property>
+	
+	<property name="establecimiento" ref="establecimiento1"></property>
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta11"></ref>
+		
+			
+		</list>
+	</property>		
+	</bean>
+	
+	
+	
+		<bean id="oferta2.1" class="domain.Oferta">
+	<property name="nombre" value="Domingos de tapas"></property>
+	<property name="descripcion" value="Todos los domingos, las tapas a 1 euro"></property>
+	<property name="codigo" value="14"></property>
+	<property name="precio" value="1.0"></property>	
+	<property name="establecimiento" ref="establecimiento2"></property>	
+	</bean>
+	
+	
+	<bean id="oferta2.2" class="domain.Oferta">
+	<property name="nombre" value="Miercoles de oferta"></property>
+	<property name="descripcion" value="El miercoles, toda la carta a mitad de precio"></property>
+	<property name="codigo" value="14"></property>
+	
+	<property name="establecimiento" ref="establecimiento2">
+	</property>	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta12"></ref>
+				<ref bean="calificacionOferta13"></ref>
+				<ref bean="calificacionOferta14"></ref>
+				<ref bean="calificacionOferta15"></ref>
+				<ref bean="calificacionOferta16"></ref>
+				<ref bean="calificacionOferta17"></ref>
+				<ref bean="calificacionOferta18"></ref>
+				<ref bean="calificacionOferta19"></ref>
+				<ref bean="calificacionOferta20"></ref>
+			
+			
+		</list>
+	</property>	
+	
+	</bean>
+	
+	
+	
+	<bean id="oferta3.1" class="domain.Oferta">
+	<property name="nombre" value="Miercoles de euro"></property>
+	<property name="descripcion" value="El miercoles, toda nuestras tapas cuestan 1 euro, junto con tu bebida a elegir"></property>
+	<property name="codigo" value="31"></property>
+	
+	<property name="establecimiento" ref="establecimiento3"></property>	
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta21"></ref>
+				<ref bean="calificacionOferta22"></ref>
+				<ref bean="calificacionOferta23"></ref>
+				<ref bean="calificacionOferta24"></ref>
+				<ref bean="calificacionOferta25"></ref>
+			
+			
+		</list>
+	</property>	
+	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia6"></ref>
+						
+		</list>
+	</property>
+	
+	</bean>
+	
+	<bean id="oferta3.2" class="domain.Oferta">
+	<property name="nombre" value="Jueves de estudiantes"></property>
+	<property name="descripcion" value="Todos los jueves, si eres estudiante de la universidad de sevilla, todas tus consumisiones tienen descuento"></property>
+	<property name="codigo" value="32"></property>
+	
+	<property name="establecimiento" ref="establecimiento3"></property>
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta26"></ref>
+			
+			
+			
+		</list>
+	</property>	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia7"></ref>
+						
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="oferta3.3" class="domain.Oferta">
+	<property name="nombre" value="Lunes de rebajas"></property>
+	<property name="descripcion" value="Lunes, cafe + tostada a mitad de precio"></property>
+	<property name="codigo" value="33"></property>
+	<property name="precio" value="0.80"></property>
+	
+	<property name="establecimiento" ref="establecimiento3"></property>	
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta27"></ref>
+				<ref bean="calificacionOferta28"></ref>
+				<ref bean="calificacionOferta29"></ref>
+			
+			
+		</list>
+	</property>
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia8"></ref>
+						
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="oferta3.4" class="domain.Oferta">
+	<property name="nombre" value="Come y bebe"></property>
+	<property name="descripcion" value="Buffet libre, minimo para dos personas"></property>
+	<property name="codigo" value="31"></property>
+		<property name="precio" value="6.75"></property>
+
+	<property name="establecimiento" ref="establecimiento3"></property>	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia9"></ref>
+						
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="oferta3.5" class="domain.Oferta">
+	<property name="nombre" value="Hora loca"></property>
+	<property name="descripcion" value="Todos los sabas, a las 19:00, barra libre de cerveza apra nuestros asistentes"></property>
+	<property name="codigo" value="35"></property>
+
+	<property name="establecimiento" ref="establecimiento3"></property>
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta30"></ref>
+				<ref bean="calificacionOferta31"></ref>
+				<ref bean="calificacionOferta32"></ref>
+			
+			
+		</list>
+	</property>	
+	<property name="incidencias">
+			<list>
+				<ref bean="incidencia10"></ref>
+						
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="oferta3.6" class="domain.Oferta">
+	<property name="nombre" value="Menú diario"></property>
+	<property name="descripcion" value="Menú del dia, siempre al mejor precio"></property>
+	<property name="codigo" value="36"></property>
+	<property name="precio" value="4.75"></property>
+	
+	<property name="establecimiento" ref="establecimiento3"></property>	
+	<property name="calificacionOfertas">
+			<list>
+				<ref bean="calificacionOferta33"></ref>
+				<ref bean="calificacionOferta34"></ref>
+				<ref bean="calificacionOferta35"></ref>
+		
+			
+			
+		</list>
+	</property>
+	</bean>
+	
+	
+	<bean id="oferta4.1" class="domain.Oferta">
+	<property name="nombre" value="Copas 2x1"></property>
+	<property name="descripcion" value="Menú del dia, siempre al mejor precio"></property>
+	<property name="codigo" value="36"></property>
+	<property name="precio" value="4.75"></property>
+
+	<property name="establecimiento" ref="establecimiento4"></property>	
+	</bean>
+	
+	
+	<bean id="oferta4.2" class="domain.Oferta">
+	<property name="nombre" value="Refrescos"></property>
+	<property name="descripcion" value="Todoso nuestros refrescos de primeras marcas por 1.40"></property>
+	<property name="codigo" value="36"></property>
+	<property name="precio" value="1.40"></property>
+	
+	<property name="establecimiento" ref="establecimiento4"></property>	
+	</bean>
+	
+	
+	<bean id="oferta4.3" class="domain.Oferta">
+	<property name="nombre" value="Entrada + Consumición"></property>
+	<property name="descripcion" value="Todos los viernes y sabados, entrada mas una consumición (primera marca)"></property>
+	<property name="codigo" value="43"></property>
+	<property name="precio" value="8.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento4"></property>	
+	</bean>
+	
+	
+	<bean id="oferta4.4" class="domain.Oferta">
+	<property name="nombre" value="Grupo de entradas"></property>
+	<property name="descripcion" value="Descuentos especiales por la compra en grupo de entradas para nuestro local. (Mínimo 10 entradas)"></property>
+	<property name="codigo" value="44"></property>	
+	
+	<property name="establecimiento" ref="establecimiento4"></property>	
+	</bean>
+	
+	
+	<bean id="oferta5.1" class="domain.Oferta">
+	<property name="nombre" value="Cerveza + pizza"></property>
+	<property name="descripcion" value="Por la compra de una cerveza de Jarra de cerveza, le regalamos una pizza a elegir"></property>
+	<property name="codigo" value="51"></property>	
+	
+	<property name="establecimiento" ref="establecimiento5"></property>	
+	</bean>
+	
+	<bean id="oferta5.2" class="domain.Oferta">
+	<property name="nombre" value="Cerveza + hamburguesa"></property>
+	<property name="descripcion" value="Por la compra de una cerveza de Jarra de cerveza, le regalamos una hamburguesa a elegir"></property>
+	<property name="codigo" value="52"></property>	
+	
+	<property name="establecimiento" ref="establecimiento5"></property>	
+	</bean>
+	
+	<bean id="oferta5.3" class="domain.Oferta">
+	<property name="nombre" value="Cerveza + tapa"></property>
+	<property name="descripcion" value="Por la compra de una cerveza de Jarra de cerveza, le regalamos una tapa a elegir"></property>
+	<property name="codigo" value="53"></property>	
+	
+	<property name="establecimiento" ref="establecimiento5"></property>	
+	</bean>
+	
+	<bean id="oferta5.4" class="domain.Oferta">
+	<property name="nombre" value="Cerveza + montadito"></property>
+	<property name="descripcion" value="Por la compra de una cerveza de Jarra de cerveza, le regalamos un montadito a elegir"></property>
+	<property name="codigo" value="54"></property>	
+	
+	<property name="establecimiento" ref="establecimiento5"></property>	
+	</bean>
+	
+	
+	<bean id="oferta6.1" class="domain.Oferta">
+	<property name="nombre" value="Menú diario"></property>
+	<property name="descripcion" value="Menú diario, que incluye 2 platos y postre"></property>
+	<property name="codigo" value="61"></property>	
+	
+		<property name="precio" value="4.75"></property>
+	<property name="establecimiento" ref="establecimiento6"></property>	
+	</bean>
+	
+	<bean id="oferta6.2" class="domain.Oferta">
+	<property name="nombre" value="Combo de menú"></property>
+	<property name="descripcion" value="Compra un bono para tu menú, a elegir los días que quieras. Incluye 5 ticket para canjear en cualquier menú"></property>
+	<property name="codigo" value="62"></property>	
+	<property name="precio" value="20.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento6"></property>	
+	</bean>
+	
+	
+	<bean id="oferta9.1" class="domain.Oferta">
+	<property name="nombre" value="CopasxPuntos"></property>
+	<property name="descripcion" value="Consigue puntos por cada copa consumida, para canjear en nuestra variedad de regalos"></property>
+	<property name="codigo" value="71"></property>	
+	
+	<property name="establecimiento" ref="establecimiento9"></property>	
+	</bean>
+	
+	<bean id="oferta9.2" class="domain.Oferta">
+	<property name="nombre" value="Domingo de bingos"></property>
+	<property name="descripcion" value="Todos los domingos, por cada consumición podrás participar en nuestro bingo y ganar diversos premios"></property>
+	<property name="codigo" value="72"></property>	
+	
+	
+	<property name="establecimiento" ref="establecimiento9"></property>	
+	</bean>
+	
+	<bean id="oferta9.3" class="domain.Oferta">
+	<property name="nombre" value="Copa + Desayuno"></property>
+	<property name="descripcion" value="Con la consumición de una copa los sabados, consigue de forma gratuita una desayuno para el domingo"></property>
+	<property name="codigo" value="73"></property>	
+	
+	<property name="establecimiento" ref="establecimiento9"></property>	
+	</bean>
+	
+	
+	<bean id="oferta11.1" class="domain.Oferta">
+	<property name="nombre" value="Menú especial - 2 personas"></property>
+	<property name="descripcion" value="menú que incluye 2 Rollo primavera, 1 ensalada china, 1 arroz frito, 1 pollo con almendras, 1 gamba con salsa picante"></property>
+	<property name="codigo" value="111"></property>	
+	<property name="precio" value="19.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento11"></property>	
+	</bean>
+	
+	<bean id="oferta11.2" class="domain.Oferta">
+	<property name="nombre" value="Menú especial - 3 personas"></property>
+	<property name="descripcion" value="3 Rollos primavera, 1 Ensalada china, 1 Arroz frito tres delicias, 1 Ternera con bambú y setas chinas, 1 Pollo estilo chino, 1 Cerdo agridulce"></property>
+	<property name="codigo" value="112"></property>	
+	<property name="precio" value="27.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento11"></property>	
+	</bean>
+	
+	<bean id="oferta11.3" class="domain.Oferta">
+	<property name="nombre" value="Menú especial - 4 personas"></property>
+	<property name="descripcion" value="4 Rollos primavera, 2 Ensalada china, 1 Pan de gambas, 2 Arroz frito tres delicias, 1 Ternera con salsa de ostras, 1 Cerdo agridulce, 1 Bolita de pollo
+1, Gambas con verduras"></property>
+	<property name="codigo" value="113"></property>	
+	<property name="precio" value="33.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento11"></property>	
+	</bean>
+	
+	<bean id="oferta11.4" class="domain.Oferta">
+	<property name="nombre" value="Langostinos"></property>
+	<property name="descripcion" value="Langostinos frescos, hechos a la plancha"></property>
+	<property name="codigo" value="114"></property>	
+	<property name="precio" value="4.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento11"></property>	
+	</bean>
+	<bean id="oferta11.5" class="domain.Oferta">
+	<property name="nombre" value="Rollo de primavera"></property>
+	<property name="descripcion" value="Delicioso rollito de primavera, realizado de forma manual"></property>
+	<property name="codigo" value="115"></property>	
+	<property name="precio" value="2.45"></property>	
+	
+	<property name="establecimiento" ref="establecimiento11"></property>	
+	</bean>
+	<bean id="oferta11.6" class="domain.Oferta">
+	<property name="nombre" value="Wan-Tun"></property>
+	<property name="descripcion" value="Delicioso plato oriental para dos personas"></property>
+	<property name="codigo" value="116"></property>	
+	<property name="precio" value="2.75"></property>	
+	
+	<property name="establecimiento" ref="establecimiento11"></property>	
+	</bean>
+	
+	
+	<bean id="oferta12.1" class="domain.Oferta">
+	<property name="nombre" value="Oferta 2x1"></property>
+	<property name="descripcion" value="Ofertas 2x1 en pizas y hamburguesas tamaño XL"></property>
+	<property name="codigo" value="121"></property>	
+	<property name="precio" value="4.75"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.2" class="domain.Oferta">
+	<property name="nombre" value="Ensalada Mixta"></property>
+	<property name="descripcion" value="Lechuga, maíz, atún, zanahoria, espárrago blanco, huevo duro, cebolla"></property>
+	<property name="codigo" value="122"></property>	
+	<property name="precio" value="5.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.3" class="domain.Oferta">
+	<property name="nombre" value="Ensalada Cheff"></property>
+	<property name="descripcion" value="Lechuga, queso, jamón york, zanahoria, mayonesa, pollo"></property>
+	<property name="codigo" value="123"></property>	
+	<property name="precio" value="5.75"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.4" class="domain.Oferta">
+	<property name="nombre" value="Gambas Blancas de Plato"></property>
+	<property name="descripcion" value="Incluye 19 o 20 piezas"></property>
+	<property name="codigo" value="124"></property>	
+	<property name="precio" value="9.75"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.5" class="domain.Oferta">
+	<property name="nombre" value="Tabla de pulpo a la gallega"></property>
+	<property name="descripcion" value="Incluye 10 piezas de pulpo"></property>
+	<property name="codigo" value="125"></property>	
+	<property name="precio" value="5.75"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.6" class="domain.Oferta">
+	<property name="nombre" value="Acedias"></property>
+	<property name="descripcion" value="1/4 kg"></property>
+	<property name="codigo" value="126"></property>	
+	<property name="precio" value="6.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.7" class="domain.Oferta">
+	<property name="nombre" value="Calamares"></property>
+	<property name="descripcion" value="1/4 KG"></property>
+	<property name="codigo" value="127"></property>	
+	<property name="precio" value="6.95"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.8" class="domain.Oferta">
+	<property name="nombre" value="Churrasco"></property>
+	<property name="descripcion" value="Pollo (Pechuga)"></property>
+	<property name="codigo" value="128"></property>	
+	<property name="precio" value="5.75"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.9" class="domain.Oferta">
+	<property name="nombre" value="Serranito con Patatas Fritas"></property>
+	<property name="descripcion" value="DA elegir entre pollo y lomo"></property>
+	<property name="codigo" value="129"></property>	
+	<property name="precio" value="4.25"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+		<bean id="oferta12.10" class="domain.Oferta">
+	<property name="nombre" value="Campero"></property>
+	<property name="descripcion" value="Chorizo picante, patatas, huevo, pimiento y cebolla"></property>
+	<property name="codigo" value="1210"></property>	
+	<property name="precio" value="8.00"></property>	
+	
+	<property name="establecimiento" ref="establecimiento12"></property>	
+	</bean>
+	
+		<bean id="oferta13.1" class="domain.Oferta">
+	<property name="nombre" value="Menú diario"></property>
+	<property name="descripcion" value="Menú diario, que incluye 2 platos y postre"></property>
+	<property name="codigo" value="131"></property>	
+	
+		<property name="precio" value="4.75"></property>
+	<property name="establecimiento" ref="establecimiento13"></property>	
+	</bean>
+	
+	<bean id="oferta13.2" class="domain.Oferta">
+	<property name="nombre" value="Combo de menú"></property>
+	<property name="descripcion" value="Compra un bono para tu menú, a elegir los días que quieras. Incluye 5 ticket para canjear en cualquier menú"></property>
+	<property name="codigo" value="132"></property>	
+	<property name="precio" value="20.00"></property>
+
+	<property name="establecimiento" ref="establecimiento13"></property>	
+	</bean>
+	
+		<bean id="oferta14.1" class="domain.Oferta">
+	<property name="nombre" value="Menú diario"></property>
+	<property name="descripcion" value="Menú diario, que incluye 2 platos y postre"></property>
+	<property name="codigo" value="141"></property>	
+	
+		<property name="precio" value="4.75"></property>
+	<property name="establecimiento" ref="establecimiento14"></property>	
+	</bean>
+	
+	<bean id="oferta14.2" class="domain.Oferta">
+	<property name="nombre" value="Combo de menú"></property>
+	<property name="descripcion" value="Compra un bono para tu menú, a elegir los días que quieras. Incluye 5 ticket para canjear en cualquier menú"></property>
+	<property name="codigo" value="142"></property>	
+	<property name="precio" value="20.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento14"></property>	
+	</bean>
+	
+	
+	
+	<bean id="oferta15.1" class="domain.Oferta">
+	<property name="nombre" value="Oferta-Lunes a Jueves de 12:00 a 16:00"></property>
+	<property name="descripcion" value="2 pizzas a elegit"></property>
+	<property name="codigo" value="151"></property>	
+	<property name="precio" value="10.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.2" class="domain.Oferta">
+	<property name="nombre" value="Pizza Ángela"></property>
+	<property name="descripcion" value="Champiñones y olivas"></property>
+	<property name="codigo" value="152"></property>	
+	<property name="precio" value="5.75"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.3" class="domain.Oferta">
+	<property name="nombre" value="Pizza Vegetal"></property>
+	<property name="descripcion" value="Champiñones, pimiento verdes y alcachofas"></property>
+	<property name="codigo" value="153"></property>	
+	<property name="precio" value="6.25"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.4" class="domain.Oferta">
+	<property name="nombre" value="Pizza Marinera"></property>
+	<property name="descripcion" value="York, atún y pimiento morrón"></property>
+	<property name="codigo" value="154"></property>	
+	<property name="precio" value="3.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.5" class="domain.Oferta">
+	<property name="nombre" value="Pizza Mejicana"></property>
+	<property name="descripcion" value="Pollo, chorizo picante, morrón y jalisco"></property>
+	<property name="codigo" value="155"></property>	
+	<property name="precio" value="3.50"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.6" class="domain.Oferta">
+	<property name="nombre" value="Baguette Pantomate"></property>
+	<property name="descripcion" value="Jamón serrano, tomate y aceite"></property>
+	<property name="codigo" value="156"></property>	
+	<property name="precio" value="3.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.7" class="domain.Oferta">
+	<property name="nombre" value="Baguette Manta"></property>
+	<property name="descripcion" value="Jamón serrano y queso en lonchas"></property>
+	<property name="codigo" value="157"></property>	
+	<property name="precio" value="3.00"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.8" class="domain.Oferta">
+	<property name="nombre" value="Sándiwch Especial"></property>
+	<property name="descripcion" value="Jamón york, queso, lechuga, tomate, mahonesa, huevo y patatas"></property>
+	<property name="codigo" value="158"></property>	
+	<property name="precio" value="2.50"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.9" class="domain.Oferta">
+	<property name="nombre" value="Hamburguesa Americana con Patatas"></property>
+	<property name="descripcion" value="Bacon, huevo y salsa barbacoa"></property>
+	<property name="codigo" value="159"></property>	
+	<property name="precio" value="2.50"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	<bean id="oferta15.10" class="domain.Oferta">
+	<property name="nombre" value="Hamburguesa Extra"></property>
+	<property name="descripcion" value="Dos pisos, bacon y cheddar"></property>
+	<property name="codigo" value="1510"></property>	
+	<property name="precio" value="4.50"></property>
+	
+	<property name="establecimiento" ref="establecimiento15"></property>	
+	</bean>
+	
+	
+	<bean id="calificacionOferta1" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Excelente, repetiremos"></property>
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	
+	<bean id="calificacionOferta2" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="7"></property>
+	
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="estudiante" ref="estudiante4.2"></property>
+	</bean>
+	
+	<bean id="calificacionOferta3" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="10"></property>
+
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="estudiante" ref="estudiante4.3"></property>
+	</bean>
+	<bean id="calificacionOferta4" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="3"></property>
+	<property name="comentarios" value="LLegó frio"></property>
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="estudiante" ref="estudiante4.4"></property>
+	</bean>
+	<bean id="calificacionOferta5" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="10"></property>
+	<property name="comentarios" value="Excelente, repetiremos, buena comida a un gran precio"></property>
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="estudiante" ref="estudiante4.5"></property>
+	</bean>
+	
+	
+	
+	<bean id="calificacionOferta6" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="9"></property>
+	<property name="comentarios" value="Muy rapida la comida y a buen precio"></property>
+	<property name="oferta" ref="oferta1.2"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	<bean id="calificacionOferta7" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta1.2"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	<bean id="calificacionOferta8" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="10"></property>
+	
+	<property name="oferta" ref="oferta1.2"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	<bean id="calificacionOferta9" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="10"></property>
+	
+	<property name="oferta" ref="oferta1.2"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	
+	
+	<bean id="calificacionOferta10" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Excelente, repetiremos"></property>
+	<property name="oferta" ref="oferta1.3"></property>
+	<property name="estudiante" ref="estudiante4.7"></property>
+	</bean>
+	<bean id="calificacionOferta11" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Excelente, repetiremos"></property>
+	<property name="oferta" ref="oferta1.4"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	</bean>
+	
+	
+	
+	<bean id="calificacionOferta12" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Buena localizacion, bajos precios y gran calidad. Sin duda, repetiremos"></property>
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	</bean>
+	<bean id="calificacionOferta13" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.9"></property>
+	</bean>
+	<bean id="calificacionOferta14" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Un sitio agradable y a un buen precio"></property>
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.10"></property>
+	</bean>
+	<bean id="calificacionOferta15" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="6"></property>
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	<bean id="calificacionOferta16" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="6"></property>
+	<property name="comentarios" value="Genial sitio al que ir despues de clase :)"></property>
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="estudiante" ref="estudiante4.2"></property>
+	</bean>
+	<bean id="calificacionOferta17" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="9"></property>
+	
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.3"></property>
+	</bean>
+	<bean id="calificacionOferta18" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="5"></property>
+
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.4"></property>
+	</bean>
+	<bean id="calificacionOferta19" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Excelente, repetiremos"></property>
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.5"></property>
+	</bean>
+	<bean id="calificacionOferta20" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="7"></property>	
+	<property name="oferta" ref="oferta2.2"></property>
+	<property name="estudiante" ref="estudiante4.6"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	<bean id="calificacionOferta21" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="3"></property>
+	<property name="comentarios" value="Sucio"></property>
+	<property name="oferta" ref="oferta3.1"></property>
+	<property name="estudiante" ref="estudiante4.7"></property>
+	</bean>
+	<bean id="calificacionOferta22" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="4"></property>
+	
+	<property name="oferta" ref="oferta3.1"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	</bean>
+	<bean id="calificacionOferta23" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="5"></property>
+	<property name="comentarios" value="Mucha suciedad"></property>
+	<property name="oferta" ref="oferta3.1"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	</bean>
+	<bean id="calificacionOferta24" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="2"></property>
+	
+	<property name="oferta" ref="oferta3.1"></property>
+	<property name="estudiante" ref="estudiante4.10"></property>
+	</bean>
+	<bean id="calificacionOferta25" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="5"></property>
+	<property name="comentarios" value="Lugar no recomendable. La limpieza dejaba mucho que desear"></property>
+	<property name="oferta" ref="oferta3.1"></property>
+	<property name="estudiante" ref="estudiante4.11"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	<bean id="calificacionOferta26" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="7"></property>
+
+	<property name="oferta" ref="oferta3.2"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	<bean id="calificacionOferta27" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="7"></property>
+
+	<property name="oferta" ref="oferta3.3"></property>
+	<property name="estudiante" ref="estudiante4.2"></property>
+	</bean>
+	<bean id="calificacionOferta28" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="9"></property>
+	<property name="comentarios" value="Precio, calidad,variedad. Excelente"></property>
+	<property name="oferta" ref="oferta3.3"></property>
+	<property name="estudiante" ref="estudiante4.3"></property>
+	</bean>
+	<bean id="calificacionOferta29" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Gran variedad de comidad"></property>
+	<property name="oferta" ref="oferta3.3"></property>
+	<property name="estudiante" ref="estudiante4.4"></property>
+	</bean>
+	
+	
+	<bean id="calificacionOferta30" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Gran variedad de comidad"></property>
+	<property name="oferta" ref="oferta3.5"></property>
+	<property name="estudiante" ref="estudiante4.5"></property>
+	</bean>
+		<bean id="calificacionOferta31" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Gran variedad de comidad"></property>
+	<property name="oferta" ref="oferta3.5"></property>
+	<property name="estudiante" ref="estudiante4.6"></property>
+	</bean>
+		<bean id="calificacionOferta32" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Gran variedad de comidad"></property>
+	<property name="oferta" ref="oferta3.5"></property>
+	<property name="estudiante" ref="estudiante4.7"></property>
+	</bean>
+	
+	
+	
+	<bean id="calificacionOferta33" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="oferta" ref="oferta3.6"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	</bean>
+	
+	<bean id="calificacionOferta34" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="9"></property>
+	<property name="oferta" ref="oferta3.6"></property>
+	<property name="estudiante" ref="estudiante4.9"></property>
+	</bean>
+	<bean id="calificacionOferta35" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Genial en todo. Atentos en el trato hacia el cliente"></property>
+	<property name="oferta" ref="oferta3.6"></property>
+	<property name="estudiante" ref="estudiante4.10"></property>
+	</bean>
+	
+	
+	
+	<bean id="calificacionOferta36" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	<property name="comentarios" value="Genial en todo. Atentos en el trato hacia el cliente"></property>
+	<property name="oferta" ref="oferta4.1"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	</bean>
+	
+	<bean id="calificacionOferta37" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta4.3"></property>
+	<property name="estudiante" ref="estudiante4.2"></property>
+	</bean>
+	<bean id="calificacionOferta38" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta4.3"></property>
+	<property name="estudiante" ref="estudiante4.3"></property>
+	</bean>
+	<bean id="calificacionOferta39" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta4.4"></property>
+	<property name="estudiante" ref="estudiante4.4"></property>
+	</bean>
+	<bean id="calificacionOferta40" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta4.4"></property>
+	<property name="estudiante" ref="estudiante4.5"></property>
+	</bean>
+	<bean id="calificacionOferta41" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta4.4"></property>
+	<property name="estudiante" ref="estudiante4.6"></property>
+	</bean>
+	<bean id="calificacionOferta42" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>
+	
+	<property name="oferta" ref="oferta4.4"></property>
+	<property name="estudiante" ref="estudiante4.7"></property>
+	</bean>
+	
+	<bean id="calificacionOferta43" class="domain.CalificacionOferta" >
+	<property name="calificacion" value="8"></property>		
+	<property name="oferta" ref="oferta4.4"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	<bean id="incidencia1" class="domain.Incidencia" >
+	<property name="titulo" value="Poca higiene"></property>		
+	<property name="descripcion" value="El proveedor no cumple con las medidas de sanidad"></property>
+	<property name="estado" value="ACEPTADA"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>
+	<property name="oferta" ref="oferta1.1"></property>
+	<property name="administrator" ref="admin1"></property>
+	</bean>
+	<bean id="incidencia2" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta no adecuada"></property>		
+	<property name="descripcion" value="Los ingredientes parecia estar en mal estado"></property>
+	<property name="estado" value="ACEPTADA"></property>
+	<property name="estudiante" ref="estudiante4.2"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta1.1"></property>
+	</bean>
+	<bean id="incidencia3" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta no aplicable"></property>		
+	<property name="descripcion" value="El proveedor no cumplio con la oferta"></property>
+	<property name="estado" value="ACEPTADA"></property>
+	<property name="estudiante" ref="estudiante4.3"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta1.2"></property>
+	</bean>
+	<bean id="incidencia4" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta no existente"></property>		
+	<property name="descripcion" value="La oferta no existe en el establecimiento"></property>
+	<property name="estado" value="ACEPTADA"></property>
+	<property name="estudiante" ref="estudiante4.4"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta1.2"></property>
+	</bean>
+	<bean id="incidencia5" class="domain.Incidencia" >
+	<property name="titulo" value="Establecimiento cerrad"></property>		
+	<property name="descripcion" value="El proveedor no tiene local y oferta cosas inexistentes"></property>
+	<property name="estado" value="ACEPTADA"></property>
+	<property name="estudiante" ref="estudiante4.5"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta1.3"></property>
+	</bean>
+	
+	
+	<bean id="incidencia6" class="domain.Incidencia" >
+	<property name="titulo" value="Mala oferta"></property>		
+	<property name="descripcion" value="La oferta te ahorra poco dinero"></property>
+	<property name="estado" value="RECHAZADA"></property>
+	<property name="estudiante" ref="estudiante4.6"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta3.1"></property>
+	</bean>
+	<bean id="incidencia7" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta innadeciada"></property>		
+	<property name="descripcion" value="Oferta poco atractiva al publico"></property>
+	<property name="estado" value="RECHAZADA"></property>
+	<property name="estudiante" ref="estudiante4.7"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta3.2"></property>
+	</bean>
+	<bean id="incidencia8" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta de mala calidad"></property>		
+	<property name="descripcion" value="No me gusta este tipo de oferta"></property>
+	<property name="estado" value="RECHAZADA"></property>
+	<property name="estudiante" ref="estudiante4.8"></property>
+	<property name="administrator" ref="admin1"></property>
+	<property name="oferta" ref="oferta3.3"></property>
+	</bean>
+	
+	<bean id="incidencia9" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta mala"></property>		
+	<property name="descripcion" value="La oferta no tiene sentido"></property>
+	<property name="estado" value="PENDIENTE"></property>
+	<property name="estudiante" ref="estudiante4.9"></property>	
+	<property name="oferta" ref="oferta3.4"></property>
+	</bean>
+	<bean id="incidencia10" class="domain.Incidencia" >
+	<property name="titulo" value="Oferta Innadecuada"></property>		
+	<property name="descripcion" value="Esta oferta no deberia de estar aqui"></property>
+	<property name="estado" value="PENDIENTE"></property>
+	<property name="estudiante" ref="estudiante4.1"></property>	
+	<property name="oferta" ref="oferta3.5"></property>
+	</bean>
+		
+
+	
+
+
+
+
+</beans>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2014 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="oferta/list" extends="master.page">	
+		<put-attribute name="title" value="Lita de ofertas" />
+		<put-attribute name="body" value="/views/oferta/list.jsp"/>
+	</definition>	
+
+
+	
+	<definition name="oferta/create" extends="master.page">	
+		<put-attribute name="title" value="Crear oferta" />
+		<put-attribute name="body" value="/views/oferta/edit.jsp"/>
+	</definition>
+	
+	<definition name="oferta/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar oferta" />
+		<put-attribute name="body" value="/views/oferta/edit.jsp"/>
+	</definition>
+	
+	<definition name="oferta/ajax" extends="master.page">	
+		<put-attribute name="title" value="Lista de ofertas" />
+		<put-attribute name="body" value="/views/oferta/ajax.jsp"/>
+	</definition>
+	
+	<definition name="oferta/view" extends="master.page">	
+		<put-attribute name="title" value="Oferta" />
+		<put-attribute name="body" value="/views/oferta/view.jsp"/>
+	</definition>
+
+</tiles-definitions>
