@@ -5,10 +5,15 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
+
+import controllers.EstablecimientoEstudianteController;
 
 import repositories.EstablecimientoRepository;
 
+import domain.Administrator;
 import domain.Establecimiento;
+import domain.Estudiante;
 import domain.Proveedor;
 
 
@@ -21,6 +26,11 @@ public class EstablecimientoService {
 	
 	@Autowired
 	private ProveedorService proveedorService;
+	@Autowired
+	private EstudianteService estudianteService;
+	@Autowired
+	private AdministratorService administratorService;
+	
 	public Collection<Establecimiento> findEstablecimientoByProveedorId() {
 		Collection<Establecimiento> res;
 		Proveedor proveedor = proveedorService.getLoggedProveedor();
@@ -28,14 +38,27 @@ public class EstablecimientoService {
 		return res;
 	}
 	public Establecimiento create() {
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.notNull(proveedor, "Debe de haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.isNull(estudiante,"No haber un estudiante logueado");
+		
 		Establecimiento establecimiento;
 		establecimiento = new Establecimiento();
-		Proveedor proveedor = proveedorService.getLoggedProveedor();
+	
 		establecimiento.setProveedor(proveedor);
 		establecimiento.setPublicado(false);
 		return establecimiento;
 	}
 	public void save(Establecimiento establecimiento) {
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.notNull(proveedor, "Debe de haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.isNull(estudiante,"No haber un estudiante logueado");
 		establecimientoRepository.save(establecimiento);
 		
 	}
@@ -54,17 +77,37 @@ public class EstablecimientoService {
 		return establecimientoRepository.findEstablecimientoNoPublicado();
 	}
 	public void publicarEstablecimiento(Establecimiento establecimiento) {
+		
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.isNull(proveedor, "No debe de haber un proveedor logueado");
+		Assert.notNull(administrator, "Debe de haber un administrador logueado");
+		Assert.isNull(estudiante,"No debe de haber un estudiante logueado");
+		Assert.isTrue(establecimiento.getPublicado().equals(false), "El establecimiento debe de estar bloqueado");
 		establecimiento.setPublicado(true);
-		save(establecimiento);
+		establecimientoRepository.save(establecimiento);
 		
 	}
 	public void bloquearEstablecimiento(Establecimiento establecimiento) {
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.isNull(proveedor, "No debe de haber un proveedor logueado");
+		Assert.notNull(administrator, "Debe de haber un administrador logueado");
+		Assert.isNull(estudiante,"No debe de haber un estudiante logueado");
+		Assert.isTrue(establecimiento.getPublicado().equals(true), "El establecimiento debe de estar publicado");
 		establecimiento.setPublicado(false);
-		save(establecimiento);
+		establecimientoRepository.save(establecimiento);
 		
 	}
 	public Collection<Establecimiento> findPublicados() {
-		// TODO Auto-generated method stub
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.isNull(proveedor, "No debe de haber un proveedor logueado");
+		Assert.notNull(administrator, "Debe de haber un administrador logueado");
+		Assert.isNull(estudiante,"No debe de haber un estudiante logueado");
 		return establecimientoRepository.findPublicados();
 	}
 	

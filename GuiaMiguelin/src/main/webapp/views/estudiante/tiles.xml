@@ -17,22 +17,22 @@
 <tiles-definitions>
 
 	<definition name="estudiante/activacionCuentaFallo" extends="master.page">	
-		<put-attribute name="title" value="Failed" />
+		<put-attribute name="title" value="Estudiante" />
 		<put-attribute name="body" value="/views/estudiante/activacionCuentaFallo.jsp" />
 	</definition>
 	
 	<definition name="estudiante/invite" extends="master.page">	
-		<put-attribute name="title" value="Invite a friend" />
+		<put-attribute name="title" value="Estudiante" />
 		<put-attribute name="body" value="/views/estudiante/invite.jsp" />
 	</definition>
 	
 	<definition name="estudiante/edit" extends="master.page">	
-		<put-attribute name="title" value="Create Estudiant" />
+		<put-attribute name="title" value="Estudiante" />
 		<put-attribute name="body" value="/views/estudiante/edit.jsp" />
 	</definition>
 	
 	<definition name="estudiante/activateAccount" extends="master.page">	
-		<put-attribute name="title" value="Create Estudiant" />
+		<put-attribute name="title" value="Estudiante" />
 		<put-attribute name="body" value="/views/estudiante/activateAccount.jsp" />
 	</definition>
 	

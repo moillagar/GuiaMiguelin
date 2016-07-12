@@ -34,6 +34,8 @@
 
 
 <jstl:forEach var="establecimientos" items="${establecimientos}">
+<div class="col-md-1"></div>
+<div class="col-md-5">
  		<div class="col-md-8-2 panel panel-default">
 	 		
 	 	
@@ -57,6 +59,7 @@
 			
 			
 			
+	 	</div>
 	 	</div>
  	</jstl:forEach>
 

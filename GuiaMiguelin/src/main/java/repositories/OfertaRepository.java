@@ -13,7 +13,7 @@ import domain.Oferta;
 @Repository
 public interface OfertaRepository extends JpaRepository<Oferta,Integer>{
 	
-	@Query("select o from Oferta o where o.nombre like %?1% or o.descripcion like %?1%")
+	@Query("select o from Oferta o where o.nombre like %?1% or o.descripcion like %?1% or o.establecimiento.campus like %?1%")
 	Collection<Oferta> findOfertaByKeyword(String key);
 
 	@Query("select o from Oferta o where o.establecimiento.id=?1")

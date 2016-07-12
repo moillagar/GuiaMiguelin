@@ -17,29 +17,29 @@
 <tiles-definitions>
 
 	<definition name="establecimiento/list" extends="master.page">	
-		<put-attribute name="title" value="Lita de establecimientos" />
+		<put-attribute name="title" value="Establecimientos" />
 		<put-attribute name="body" value="/views/establecimiento/list.jsp"/>
 	</definition>	
 
 <definition name="establecimiento/listNoPublicado" extends="master.page">	
-		<put-attribute name="title" value="Lita de establecimientos" />
+		<put-attribute name="title" value="Establecimientos" />
 		<put-attribute name="body" value="/views/establecimiento/listNoPublicado.jsp"/>
 	</definition>
 	
 
 	
 	<definition name="establecimiento/create" extends="master.page">	
-		<put-attribute name="title" value="Crear Establecimiennto" />
+		<put-attribute name="title" value="Establecimientos" />
 		<put-attribute name="body" value="/views/establecimiento/edit.jsp"/>
 	</definition>
 	
 	<definition name="establecimiento/edit" extends="master.page">	
-		<put-attribute name="title" value="Editar Establecimiennto" />
+		<put-attribute name="title" value="Establecimientos" />
 		<put-attribute name="body" value="/views/establecimiento/edit.jsp"/>
 	</definition>	
 	
 	<definition name="establecimiento/view" extends="master.page">	
-		<put-attribute name="title" value="Ver establecimiento" />
+		<put-attribute name="title" value="Establecimientos" />
 		<put-attribute name="body" value="/views/establecimiento/view.jsp"/>
 	</definition>
 

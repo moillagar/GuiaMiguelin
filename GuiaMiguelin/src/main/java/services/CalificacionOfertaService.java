@@ -8,11 +8,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
 
 import repositories.CalificacionOfertaRepository;
+import domain.Administrator;
 import domain.CalificacionOferta;
 import domain.Estudiante;
 import domain.Oferta;
+import domain.Proveedor;
 
 
 @Service
@@ -25,14 +28,25 @@ public class CalificacionOfertaService {
 	private OfertaService ofertaService;
 	@Autowired
 	private EstudianteService estudianteService;
+	@Autowired
+	private AdministratorService administratorService;
+	@Autowired
+	private ProveedorService proveedorService;
 
 	public CalificacionOfertaService() {
 		super();
 	}
 
 	public CalificacionOferta create(Integer id) {
-		Oferta oferta = ofertaService.findOne(id);
+		
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
 		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.isNull(proveedor, "No puede haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.notNull(estudiante,"Debe de haber un estudiante logueado");
+		Oferta oferta = ofertaService.findOne(id);
+		
 		CalificacionOferta result;
 		result = new CalificacionOferta();
 		result.setCreationMoment(new Date(System.currentTimeMillis()-1000));
@@ -42,6 +56,13 @@ public class CalificacionOfertaService {
 	}
 
 	public CalificacionOferta save(CalificacionOferta calificacionOferta) {
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.isNull(proveedor, "No puede haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.notNull(estudiante,"Debe de haber un estudiante logueado");
+		
 		CalificacionOferta result;
 		result = calificacionOfertaRepository.saveAndFlush(calificacionOferta);
 		return result;

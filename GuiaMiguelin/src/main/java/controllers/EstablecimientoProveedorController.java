@@ -90,6 +90,18 @@ public class EstablecimientoProveedorController {
 		return result;
 	}
 	
+	
+	// edicion -----------------------------------------
+			@RequestMapping(value = "/edit", method = RequestMethod.GET)
+			public ModelAndView edit(@RequestParam("id") int id) {
+				ModelAndView result;
+				result = new ModelAndView("establecimiento/edit");
+				result.addObject("establecimiento", establecimientoService.findOne(id));
+				result.addObject("requestURI", "establecimiento/proveedor/edit.do");
+
+				return result;
+			}
+	
 	@RequestMapping(value = "/edit", method = RequestMethod.POST, params = "save")
 	public ModelAndView save(@Valid Establecimiento establecimiento, BindingResult binding,@RequestParam("file") MultipartFile file) {
 		ModelAndView result;

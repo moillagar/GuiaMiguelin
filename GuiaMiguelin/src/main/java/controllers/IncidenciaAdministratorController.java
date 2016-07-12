@@ -79,7 +79,7 @@ public class IncidenciaAdministratorController {
 
 		} else {
 			try {
-				
+				incidenciaService.actualizaIncidence(incidencia);
 				incidenciaService.save(incidencia);
 				Collection<Incidencia> incidencias = incidenciaService.findIncidenciasPendientes();
 				Collection<Establecimiento> establecimientos = establecimientoService.findEstablecimientoNoPublicado();

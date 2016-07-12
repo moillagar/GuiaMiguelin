@@ -25,22 +25,9 @@
 		<value>/views/welcome/messages</value>
 		
 		<value>/views/customer/messages</value>
-		<value>/views/complaint/messages</value>
-		<value>/views/comment/messages</value>
-		<value>/views/search/messages</value>
-		<value>/views/petOwner/messages</value>
-		<value>/views/petSitter/messages</value>
-		<value>/views/petShipper/messages</value>
-		<value>/views/review/messages</value>
-		<value>/views/booking/messages</value>
-		<value>/views/supplier/messages</value>
+		
 		<value>/views/administrator/messages</value>
-		<value>/views/pet/messages</value>
-		<value>/views/trip/messages</value>
-		<value>/views/registration/messages</value>
-		<value>/views/company/messages</value>
-		<value>/views/vehicle/messages</value>
-		<value>/views/paypal/messages</value>
+		
 		
 		<value>/views/estudiante/messages</value>
 		<value>/views/proveedor/messages</value>

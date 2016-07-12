@@ -17,29 +17,29 @@
 <tiles-definitions>
 
 	<definition name="incidencia/listAdmin" extends="master.page">	
-		<put-attribute name="title" value="Incidencias" />
+		<put-attribute name="title" value="Incidencia" />
 		<put-attribute name="body" value="/views/incidencia/listAdmin.jsp" />
 	</definition>
 	
 	<definition name="incidencia/listPending" extends="master.page">	
-		<put-attribute name="title" value="Incidencias" />
+		<put-attribute name="title" value="Incidencia" />
 		<put-attribute name="body" value="/views/incidencia/listPending.jsp" />
 	</definition>
 	<definition name="incidencia/list" extends="master.page">	
-		<put-attribute name="title" value="Incidences" />
+		<put-attribute name="title" value="Incidencia" />
 		<put-attribute name="body" value="/views/incidencia/list.jsp" />
 	</definition>
 	<definition name="incidencia/resolve" extends="master.page">	
-		<put-attribute name="title" value="" />
+		<put-attribute name="title" value="Incidencia" />
 		<put-attribute name="body" value="/views/incidencia/resolve.jsp" />
 	</definition>
 	<definition name="incidencia/edit" extends="master.page">	
-		<put-attribute name="title" value="" />
+		<put-attribute name="title" value="Incidencia" />
 		<put-attribute name="body" value="/views/incidencia/resolve.jsp" />
 	</definition>
 	
 	<definition name="incidencia/create" extends="master.page">	
-		<put-attribute name="title" value="Crear" />
+		<put-attribute name="title" value="Incidencia" />
 		<put-attribute name="body" value="/views/incidencia/create.jsp" />
 	</definition>
 	

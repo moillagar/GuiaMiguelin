@@ -6,6 +6,7 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
 
 import repositories.IncidenciaRepository;
 
@@ -14,6 +15,7 @@ import domain.CalificacionOferta;
 import domain.Estudiante;
 import domain.Incidencia;
 import domain.Oferta;
+import domain.Proveedor;
 
 
 @Service
@@ -30,6 +32,8 @@ public class IncidenciaService {
 	private EstudianteService estudianteService;
 	@Autowired
 	private OfertaService ofertaService;
+	@Autowired
+	private ProveedorService proveedorService;
 	
 	public Collection<Incidencia> findIncidenciasOrder() {
 		
@@ -42,7 +46,7 @@ public class IncidenciaService {
 	}
 
 	public void save(Incidencia incidencia) {
-		
+	
 		incidenciaRepository.save(incidencia);
 	}
 
@@ -57,8 +61,14 @@ public class IncidenciaService {
 	}
 
 	public Incidencia create(Integer id) {
-		Oferta oferta = ofertaService.findOne(id);
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
 		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.isNull(proveedor, "No puede haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.notNull(estudiante,"Debe de haber un estudiante logueado");
+		Oferta oferta = ofertaService.findOne(id);
+		
 		Incidencia result;
 		result = new Incidencia();
 		result.setUpdateMoment(new Date(System.currentTimeMillis()-1000));

@@ -15,10 +15,13 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import security.Credentials;
 import services.ClientesService;
 
 import domain.Clientes;
@@ -55,11 +58,14 @@ public class CustomerController extends AbstractController {
 	}
 
 	@RequestMapping(value = "/recuperarPass", method = RequestMethod.POST)
-	public ModelAndView sendIntation( @Valid PasswordForm pForm, BindingResult binding) {
+	public ModelAndView sendIntation( @Valid PasswordForm pForm, @ModelAttribute Credentials credentials,
+			BindingResult bindingResult,
+			@RequestParam(required = false) boolean showError,
+			@RequestParam(required = false) boolean autoLogin) {
 		ModelAndView result;
 		result = new ModelAndView();
 		Clientes clientes;
-		if (binding.hasErrors()) {
+		if (bindingResult.hasErrors()) {
 			result = createInvitationModelAndView(pForm);
 			
 		} else {
@@ -67,7 +73,10 @@ public class CustomerController extends AbstractController {
 			try {
 				
 				clientesService.changePassword( pForm);
-				
+				result.addObject("index", true);
+				result.addObject("credentials", credentials);
+				result.addObject("showError", showError);
+				result.addObject("autoLogin", autoLogin);
 			} catch (Exception e) {
 
 				

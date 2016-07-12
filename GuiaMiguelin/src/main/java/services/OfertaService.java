@@ -10,8 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 import repositories.OfertaRepository;
+import domain.Administrator;
 import domain.CalificacionOferta;
 import domain.Establecimiento;
+import domain.Estudiante;
 import domain.Incidencia;
 import domain.Oferta;
 import domain.Proveedor;
@@ -27,9 +29,19 @@ public class OfertaService {
 	private EstablecimientoService establecimientoService;
 	
 	@Autowired
-	ProveedorService proveedorService;
+	private ProveedorService proveedorService;
+	@Autowired
+	private EstudianteService estudianteService;
+	@Autowired
+	private AdministratorService administratorService;
 	
 	public Oferta create(int id) {
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.notNull(proveedor, "Debe de haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.isNull(estudiante,"No haber un estudiante logueado");
 		Oferta oferta;
 		oferta = new Oferta();
 		
@@ -47,6 +59,12 @@ public class OfertaService {
 		return oferta;
 	}
 	public void save(Oferta oferta) {
+		Administrator administrator = administratorService.getLoggedAdmin();
+		Proveedor proveedor = proveedorService.getLoggedProveedor();
+		Estudiante estudiante = estudianteService.getLoggedSingle();
+		Assert.notNull(proveedor, "Debe de haber un proveedor logueado");
+		Assert.isNull(administrator, "No puede haber un administrador logueado");
+		Assert.isNull(estudiante,"No haber un estudiante logueado");
 		ofertaRepository.save(oferta);
 		
 	}

@@ -173,8 +173,11 @@
         <div class="modal-footer">
           <button type="submit" class="btnCancelNoMargin pull-left" data-dismiss="modal">
             <span class="glyphicon glyphicon-remove"></span> Volver
+              
           </button>
+        <a href="customer/recuperarPass.do">¿Olvidaste la contraseña?</a>
         </div>
+        
       </div>
     </div>
   </div>
@@ -291,7 +294,7 @@
 
 </div>
 
-
+.
 
 </security:authorize>
 

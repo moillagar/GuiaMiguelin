@@ -21,6 +21,11 @@
 		<put-attribute name="body" value="/views/customer/addPhoto.jsp" />
 	</definition>
 	
+	<definition name="customer/recuperarPass" extends="master.page">	
+		<put-attribute name="title" value="Nueva Contraseña" />
+		<put-attribute name="body" value="/views/customer/recuperarPass.jsp" />
+	</definition>
+	
 
 
 </tiles-definitions>
